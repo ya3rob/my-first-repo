@@ -124,6 +124,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="Y7B-DA-DXp" eventType="touchUpInside" id="LfT-N8-1hP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qg-lH-0jS" customClass="BorderButton" customModule="test" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="58" width="374" height="50"/>
@@ -135,6 +138,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="Y7B-DA-DXp" eventType="touchUpInside" id="jMh-HX-Ka4"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M23-AQ-uD8" customClass="BorderButton" customModule="test" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="115.99999999999997" width="374" height="50"/>
@@ -146,10 +152,13 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="Y7B-DA-DXp" eventType="touchUpInside" id="Mco-MP-3a4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QlB-nL-R0k" customClass="BorderButton" customModule="test" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QlB-nL-R0k" customClass="BorderButton" customModule="test" customModuleProvider="target">
                                 <rect key="frame" x="16" y="666" width="382" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.40092572770000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -193,6 +202,7 @@
                         <viewLayoutGuide key="safeArea" id="Y4f-le-qq3"/>
                     </view>
                     <connections>
+                        <outlet property="nextButton" destination="QlB-nL-R0k" id="UGp-Pc-VVK"/>
                         <segue destination="IGX-VN-q5F" kind="show" identifier="skillVCSegue" id="1W8-dw-8Mb"/>
                     </connections>
                 </viewController>
@@ -219,7 +229,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="119" height="20"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am a:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3g8-DG-XFA">
-                                        <rect key="frame" x="38.333333333333329" y="60.000000000000007" width="42.333333333333329" height="19.333333333333336"/>
+                                        <rect key="frame" x="38.333333333333329" y="60.000000000000021" width="42.333333333333329" height="19.333333333333336"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
